@@ -58,6 +58,9 @@ public class Product {
 		return true;
 	}
 
+	public static boolean staticProductPredicate(Product p) {
+		return p.getPrice() >= 100;
+	}
 	@Override
 	public String toString() {
 		return "Product [name=" + name + ", price=" + price + "]";
